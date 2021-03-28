@@ -1,0 +1,29 @@
+@font-face {
+  font-family: dejavu;
+  src: url('dejavu_sans.ttf');
+}
+
+html {
+  height: 100%;
+  background-color: white;
+}
+
+body {
+  margin: 0;
+  height: 768px;
+  width: 1366px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 84px;
+  font-family: dejavu;
+}
+
+#title {
+  margin-left: 2rem;
+}
+
+.border-left {
+  border-left: 1rem solid white;
+  padding-left: 1rem;
+}
