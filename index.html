@@ -10,18 +10,28 @@
       <div contentEditable="true" spellcheck="false">
         CSE 322 - Operating Systems<br>
         Lecture (N)<br>
-        TOPIC
+        Topic
       </div>
     </div>
   </body>
+
   <script>
-    const bgColors = ["rgb(0, 0, 0)", "rgb(25, 25, 25)", "rgb(4, 7, 42)", "rgb(53, 17, 70)", "rgb(53, 5, 6)", "rgb(10, 60, 20)"]
+    const black = "rgb(0, 0, 0)";
+    const darkGrey = "rgb(25, 25, 25)";
+    const darkBlue = "rgb(4, 7, 42)";
+    const purple = "rgb(53, 17, 70)";
+    const darkRed = "rgb(53, 5, 6)";
+    const darkGreen = "rgb(10, 60, 20)";
+    const bgColors = [black, darkGrey, darkBlue, purple, darkRed, darkGreen];
+
     document.addEventListener("DOMContentLoaded", () => {
       document.addEventListener("click", (e) => {
         if (e.target.nodeName == "BODY") {
-          e.target.style.backgroundColor = bgColors[(bgColors.indexOf(e.target.style.backgroundColor)+1)%bgColors.length]
+          e.target.style.backgroundColor = bgColors[
+            (bgColors.indexOf(e.target.style.backgroundColor)+1) % bgColors.length
+          ]
         }
       })
-    })
+    });
   </script>
 </html>
